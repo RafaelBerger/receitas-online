@@ -11,16 +11,28 @@ function App() {
           <input type="search" placeholder="Buscar receitas" name="" id="" />
         </div>
       </header>
+
       <FiltroInput />
 
       <div className={styles.cardGrid}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          titulo="Costelinha de porco"
+          tipoComida="Salgado"
+          numeroIngredientes={5}
+          imagem="https://avatars.githubusercontent.com/u/84355579?v=4"
+        />
+        <Card
+          titulo="Bolo de Chocolate"
+          tipoComida="Doce"
+          numeroIngredientes={9}
+          imagem="https://avatars.githubusercontent.com/u/84355579?v=4"
+        />
+        <Card
+          titulo="Feijoada"
+          tipoComida="Salgado"
+          numeroIngredientes={13}
+          imagem="https://avatars.githubusercontent.com/u/84355579?v=4"
+        />
       </div>
     </>
   );

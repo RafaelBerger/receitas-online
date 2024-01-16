@@ -1,25 +1,31 @@
 import styles from "../card/card.module.scss";
 import { BowlFood, Users } from "@phosphor-icons/react";
-import img from "../../assets/fotoReceita.jpg";
 
-export default function Card() {
+interface Card {
+  titulo: string;
+  tipoComida: string;
+  numeroIngredientes: number;
+  imagem: string;
+}
+
+export default function Card(props: Card) {
   return (
     <>
       <div className={styles.cardSection}>
         <div className={styles.card}>
           <div>
-            <img src={img} alt="Imagem de uma receita" />
+            <img src={props.imagem} alt="Imagem de uma receita" />
           </div>
           <div className={styles.texto}>
-            <h2>Costela de porco e salada de alfaçe</h2>
+            <h2>{props.titulo}</h2>
             <div>
               <BowlFood size={25} color="#666666" weight="regular" />
-              <p>salgado</p>
+              <p>{props.tipoComida}</p>
             </div>
             <div>
               <Users size={25} color="#666666" weight="regular" />
               <p>
-                <b>20</b> ingredientes
+                <b>{props.numeroIngredientes}</b> ingredientes
               </p>
             </div>
           </div>
