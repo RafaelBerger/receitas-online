@@ -1,0 +1,44 @@
+@import "./styles/mixins.scss";
+
+.headerBackground {
+  @include centralizar();
+
+  width: 100vw;
+  height: 30vh;
+
+  background-image: url("./assets/header-image.jpg");
+}
+
+.header {
+  @include centralizar();
+
+  h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  input {
+    width: 30vw;
+    height: 3.5rem;
+    border: none;
+    border-radius: 22px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+  }
+
+  flex-direction: column;
+  gap: 2rem;
+  width: 100vw;
+  height: 30vh;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.cardGrid {
+  box-sizing: border-box;
+  padding: 0 8rem 0 8rem;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+}
