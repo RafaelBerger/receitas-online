@@ -1,5 +1,7 @@
 import styles from "./receitasInfo.module.scss";
 import img from "../assets/fotoReceita.jpg";
+import Botao from "../components/botao/Botao";
+import { Link } from "react-router-dom";
 
 function ReceitaInfo() {
   return (
@@ -33,6 +35,9 @@ function ReceitaInfo() {
             </p>
           </div>
           <img src={img} alt="" />
+          <Link to="/" className={styles.botaoSection}>
+            <Botao texto="Voltar ao inicio" />
+          </Link>
         </div>
       </main>
     </>

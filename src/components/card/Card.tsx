@@ -1,5 +1,6 @@
 import styles from "../card/card.module.scss";
 import { BowlFood, Users } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 interface Card {
   titulo: string;
@@ -11,7 +12,7 @@ interface Card {
 export default function Card(props: Card) {
   return (
     <>
-      <div className={styles.cardSection}>
+      <Link to="/receitas-info" className={styles.cardSection}>
         <div className={styles.card}>
           <div>
             <img src={props.imagem} alt="Imagem de uma receita" />
@@ -30,7 +31,7 @@ export default function Card(props: Card) {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }
