@@ -3,7 +3,7 @@ export default function Navbar() {
     <div className="bg-[#0f172a] bg-[radial-gradient(circle_at_top_right,var(--tw-gradient-stops))] from-slate-900 via-purple-900/20 to-slate-900 font-sans">
       <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
         <h1 className="text-2xl font-black text-white tracking-tighter italic">
-          CHEF.AI
+          GERADOR DE RECEITAS
         </h1>
         <div className="space-x-6 text-gray-400 font-medium">
           <a href="/" className="hover:text-white transition">

@@ -26,6 +26,7 @@ export const RecipeCard = () => {
             <li>1 xícara de cacau</li>
           </ul>
         </div>
+        +
         <div>
           <h3 className="text-xl font-semibold text-white mb-2">
             Modo de Preparo:
